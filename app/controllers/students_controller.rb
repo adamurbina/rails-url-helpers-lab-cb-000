@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    set_student.active = !set_student.active
+    @student = set_student
     redirect_to action: "show", id: set_student.id
   end
 
