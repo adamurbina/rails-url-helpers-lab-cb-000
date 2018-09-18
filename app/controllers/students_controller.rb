@@ -6,8 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    set_student
-    binding.pry
+    @student = Student.find(params[:id])
   end
 
   private
