@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    @set_student
+    set_student.active = !set_student.active
   end
 
   private
