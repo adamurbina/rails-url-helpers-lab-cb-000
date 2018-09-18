@@ -7,7 +7,4 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active(status=false)
-    status
-  end
 end
